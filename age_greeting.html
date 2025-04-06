@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Приветствие</title>
+</head>
+<body>
+  <h1>Добро пожаловать!</h1>
+
+  <script>
+    const Greeting_resp = "Здравствуйте! ";
+    const Greeting_cas = "Привет! ";
+
+    const name = prompt("Введите ваше имя:");
+    const age = prompt("Введите ваш возраст:");
+
+    const old = Number(age);
+
+    const Greeting = old >= 30 ? Greeting_resp : Greeting_cas;
+
+    console.log(`${Greeting}${name}!`);
+    alert(`${Greeting}${name}!`);
+  </script>
+</body>
+</html>
